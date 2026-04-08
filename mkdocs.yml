@@ -1,0 +1,83 @@
+site_name: Awesome Spatial Omics Niche
+site_url: https://liudengzhang.github.io/awesome-spatial-omics-niche/
+site_description: Every method defines "niche" differently. This site tells you how — and what each definition can and cannot find.
+repo_url: https://github.com/LiudengZhang/awesome-spatial-omics-niche
+repo_name: LiudengZhang/awesome-spatial-omics-niche
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Concepts:
+    - What Is a Niche?: concepts/what-is-a-niche.md
+    - Niche vs Domain: concepts/niche-vs-domain.md
+    - Functional Niche: concepts/functional-niche.md
+  - Methods:
+    - Composition-Based: methods/composition-based.md
+    - Expression-Based: methods/expression-based.md
+    - Covariance-Based: methods/covariance-based.md
+    - Communication-Based: methods/communication-based.md
+    - Morphology-Based: methods/morphology-based.md
+    - Foundation Models: methods/foundation-models.md
+    - Domain Detection: methods/domain-detection.md
+  - Deep Reads:
+    - Overview: deep-reads/index.md
+    - Schurch 2020: deep-reads/schurch-2020.md
+    - CellCharter: deep-reads/cellcharter.md
+    - BANKSY: deep-reads/banksy.md
+    - NicheCompass: deep-reads/nichecompass.md
+    - ENVI/COVET: deep-reads/envi-covet.md
+    - Nicheformer: deep-reads/nicheformer.md
+    - COMMOT: deep-reads/commot.md
+    - TESLA: deep-reads/tesla.md
+    - Niche-DE: deep-reads/niche-de.md
+    - CytoCommunity: deep-reads/cytocommunity.md
+  - Benchmarks:
+    - State of Benchmarking: benchmarks/state-of-benchmarking.md
+    - What to Measure: benchmarks/what-to-measure.md
+  - Datasets:
+    - Datasets: datasets/datasets.md
+  - Synthesis:
+    - Definition Shapes Discovery: synthesis/definition-shapes-discovery.md
+    - From Correlation to Causation: synthesis/from-correlation-to-causation.md
+  - Hackathon:
+    - Colin Stroud 2026: hackathon/colin-stroud-2026.md
+  - Glossary: glossary.md

@@ -25,14 +25,16 @@ Foundation models learn what a niche is from data rather than imposing a definit
 - **Strengths:** Attention weights provide some interpretability — you can see which neighbors the model considers important for each cell.
 - **Limitations:** Smaller pre-training scale than Nicheformer.
 
-### ONTraC
+### Novae
 
-- **Paper:** [Nature Genetics, 2025](https://doi.org/10.1038/s41588-025-02109-5)
-- **Code:** [github.com/wwang-chcn/ONTraC](https://github.com/wwang-chcn/ONTraC)
-- **Niche definition:** Ordered Niche Trajectory Construction — uses graph neural networks to order spatial niches along continuous biological gradients.
-- **Key innovation:** Goes beyond niche identification to niche ordering — arranges niches along a continuous trajectory that corresponds to biological progression (e.g., tumor core to invasive margin to stroma).
-- **Strengths:** Provides spatial organization of niches, not just niche labels. Captures the continuum between niche types.
-- **Limitations:** Assumes niches can be ordered along a low-dimensional trajectory, which may not hold for all tissues.
+- **Paper:** [Nature Methods, 2025](https://doi.org/10.1038/s41592-025-02624-1)
+- **Code:** [github.com/MICS-Lab/novae](https://github.com/MICS-Lab/novae)
+- **Niche definition:** Graph-based foundation model that learns spatial domain and niche representations via self-supervised learning on spatial graphs.
+- **Key innovation:** Zero-shot inference — can identify spatial domains and niches on new datasets without retraining. Works across technologies (Visium, MERFISH, Xenium).
+- **Strengths:** No fine-tuning needed for new tissues or platforms. Broad pre-training dataset.
+- **Limitations:** Zero-shot performance may be lower than fine-tuned specialist models on specific tissues. Like other foundation models, the niche definition is implicit.
+
+Note: ONTraC, previously listed here, is a niche trajectory method rather than a foundation model. See the README's Niche-Aware Downstream Analysis section.
 
 ## The Interpretability Challenge
 

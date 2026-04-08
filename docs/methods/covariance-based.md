@@ -18,8 +18,8 @@ These methods go beyond averaging neighbor expression to capture how gene co-exp
 
 ### SIMVI
 
-- **Paper:** [Nature Methods, 2025](https://doi.org/10.1038/s41592-025-02600-9)
-- **Code:** [github.com/scverse/scvi-tools](https://github.com/scverse/scvi-tools) (integrated into scvi-tools)
+- **Paper:** [Nature Communications, 2025](https://doi.org/10.1038/s41467-025-56090-0)
+- **Code:** [github.com/KlugerLab/SIMVI](https://github.com/KlugerLab/SIMVI)
 - **Niche definition:** Separates intrinsic cell state from extrinsic niche effects via a structured variational autoencoder.
 - **Key innovation:** Jointly models cell-intrinsic and niche-extrinsic factors to prevent confounding — a cell's expression in a niche is decomposed into what the cell would express anywhere plus what the niche adds.
 - **Strengths:** Principled deconfounding of cell identity from niche effects. Integrated into the scvi-tools ecosystem.

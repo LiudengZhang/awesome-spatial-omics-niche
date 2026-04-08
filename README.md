@@ -59,7 +59,7 @@ Niche = gene expression patterns aggregated over spatial neighbors. These method
 Niche = gene-gene covariance structure across spatial neighbors. These methods capture how expression patterns co-vary in local neighborhoods, not just their averages.
 
 - [ENVI/COVET](https://github.com/dpeerlab/ENVI) - COVET computes niche as a gene-gene covariance tensor over spatial neighbors; ENVI uses this to impute missing genes from spatial data via a conditional VAE (Nature Biotechnology, 2024).
-- [SIMVI](https://github.com/scverse/scvi-tools) - Spatially-informed variational inference separating intrinsic cell state from extrinsic niche effects; jointly models both to prevent confounding (Nature Methods, 2025).
+- [SIMVI](https://github.com/KlugerLab/SIMVI) - Spatially-informed variational inference separating intrinsic cell state from extrinsic niche effects; jointly models both to prevent confounding (Nature Communications, 2025).
 - [SPACE](https://github.com/dpeerlab/SPACE) - Identifies spatial gene expression patterns through spatially-aware clustering that captures local covariance structure (Cell Systems, 2023).
 
 ## Communication-Based Methods
@@ -68,6 +68,7 @@ Niche = active ligand-receptor signaling between spatial neighbors. These method
 
 - [NicheCompass](https://github.com/Lotfollahi-lab/nichecompass) - Graph neural network that explicitly models ligand-receptor interactions as niche features; learns a unified niche atlas across samples and conditions (Nature Genetics, 2025).
 - [COMMOT](https://github.com/zcang/COMMOT) - Optimal transport framework for cell-cell communication in spatial transcriptomics; infers spatially-constrained signaling without requiring single-cell resolution (Nature Methods, 2022).
+- [DeepLinc](https://github.com/xryanglab/DeepLinc) - Deep generative model (VGAE) for inferring cell interaction landscapes from spatial transcriptomics; used as a benchmark baseline in NicheCompass evaluation (Genome Biology, 2022).
 - [CellChat v2](https://github.com/jinworks/CellChat) - Widely-used cell-cell communication toolkit with spatial extensions; infers, visualizes, and compares intercellular signaling networks (Nature Communications, 2021; v2 update 2024).
 - [SpaTalk](https://github.com/ZJUFanLab/SpaTalk) - Cell-cell communication analysis using graph networks to model spatially-resolved ligand-receptor interactions at single-cell resolution (Nature Communications, 2022).
 - [SpatialDM](https://github.com/StatBiomed/SpatialDM) - Global and local statistical tests for spatially co-expressed ligand-receptor pairs using bivariate Moran's I statistics (Nature Communications, 2023).
@@ -99,15 +100,19 @@ Niche = joint histological and transcriptomic features. These methods combine H&
 Niche = learned representation from large-scale pre-training. These models learn what a niche is from data rather than imposing a definition.
 
 - [Nicheformer](https://github.com/theislab/nicheformer) - 49M-parameter model that beats the 444M TranscriptFormer on spatial tasks by incorporating spatial context; demonstrates that architecture and data type matter more than parameter count (Nature Methods, 2025).
+- [Novae](https://github.com/MICS-Lab/novae) - Graph-based foundation model for spatial transcriptomics with zero-shot spatial domain and niche inference; works across technologies without retraining (Nature Methods, 2025).
 - [scNiche](https://github.com/wanglabtongji/scNiche) - Foundation model for single-cell spatial niche analysis combining graph attention with expression modeling for niche-aware cell embeddings (Nature Communications, 2025).
-- [ONTraC](https://github.com/wwang-chcn/ONTraC) - Ordered Niche Trajectory Construction using graph neural networks to order spatial niches along continuous biological gradients (Nature Genetics, 2025).
 
 ## Niche-Aware Downstream Analysis
 
 Methods that use niche context as input to downstream biological questions rather than defining niches as their primary output.
 
+- [MISTy](https://github.com/saezlab/mistyR) - Multiview Intercellular Spatial modeling framework using explainable machine learning to model intra- and intercellular spatial relationships at multiple scales (Genome Biology, 2022).
+- [NCEM](https://github.com/theislab/ncem) - Node-Centric Expression Models that learn how spatial neighborhood composition influences gene expression via graph neural networks (Nature Biotechnology, 2022).
 - [Niche-DE](https://github.com/ccb-hms/NicheDE) - Detects niche-associated differential expression by testing whether a gene's expression depends on neighboring cell-type composition; separates niche effects from cell-intrinsic expression (Genome Biology, 2024).
+- [NicheFlow](https://github.com/theislab/nicheflow) - Flow-based generative model for niche trajectory analysis across spatial slides; orders niches along continuous biological gradients (ICLR, 2025).
 - [NICHES](https://github.com/msraredon/NICHES) - Computes cell-cell interaction scores in spatial neighborhoods, generating niche-specific interaction profiles per cell (Bioinformatics, 2022).
+- [ONTraC](https://github.com/wwang-chcn/ONTraC) - Ordered Niche Trajectory Construction using graph neural networks to order spatial niches along continuous biological gradients (Genome Biology, 2025).
 - [Squidpy nhood_enrichment](https://github.com/scverse/squidpy) - Tests whether cell-type co-localization patterns deviate from random, providing a statistical measure of niche preference; part of the broader Squidpy spatial analysis toolkit (Nature Methods, 2022).
 - [MESA](https://github.com/FunctionLab/MESA) - Measures spatial association between gene expression and cell-type neighborhoods to find genes with spatially structured expression patterns (Nature Methods, 2024).
 

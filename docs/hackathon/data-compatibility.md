@@ -75,8 +75,10 @@ CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 
 | Study | How CellCharter Was Used | Context |
 |-------|------------------------|---------|
-| Wang/Liu et al., Cancer Cell 2025 | Referenced as a related composition-based approach for CAF spatial subtyping | Pan-cancer CAF atlas (14M cells, 7 platforms). Used a similar neighborhood-composition clustering approach across MERSCOPE, CosMx, Xenium, CODEX, IMC. |
-| Prakrithi et al., bioRxiv 2025 | Referenced for spatial community detection methodology | 12-technology skin cancer atlas. Used per-platform community detection (10 communities each) then cross-platform correlation to form meta-communities. |
+| Restrepo et al., *Nature Genetics* 2026 | Ran CellCharter v0.3.4 with scANVI integration for spatial clustering; identified 10 multicellular neighborhoods at maximum stability | Human skin anatomy atlas. Single-cell spatial transcriptomic census of normal skin. |
+
+!!! note "Adoption status"
+    CellCharter is frequently cited as a method (e.g., in NicheCompass benchmark, spatial omics reviews) but actual pipeline usage in biological studies is still emerging. Many studies use conceptually similar neighborhood-composition approaches with custom code (e.g., Wang/Liu et al. Cancer Cell 2025) rather than CellCharter directly.
 
 **Relevance to our pipeline:** The only niche tool verified on both RNA (CosMx, MERSCOPE) and protein (CODEX, IMC) platforms. This makes it uniquely suited for our Step 4 (RNA vs protein concordance), where we run it independently on each modality of D1 and V1.
 
@@ -94,12 +96,14 @@ CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 
 **Used in published studies:**
 
-| Study | How NicheCompass (or Similar Communication-Based Analysis) Was Used | Context |
-|-------|------------------------------------------------------------------|---------|
-| Peng/Kadara et al., Cancer Cell 2026 | Used L-R communication analysis (IL1B-IL1R1 axis) to characterize proinflammatory niches | Lung precancer progression. Identified epithelial-proinflammatory niches via co-localization + L-R signaling, validated with mouse model + therapeutic intervention. |
-| Prakrithi et al., bioRxiv 2025 | Used CellChat + stLearn SCTP for spatially-constrained L-R analysis | 12-technology skin cancer atlas. Found that spatially-constrained CCC detects interactions (e.g., WNT5A-ROR1) missed by non-spatial scRNAseq-based CellChat. |
-| Wang/Liu et al., Cancer Cell 2025 | Used CellChat for L-R communication per spatial CAF subtype | Pan-cancer CAF atlas. Each of 4 spatial CAF subtypes had distinct interaction networks. |
-| Wang/Ali et al., Nature 2023 | Used direct cell-mask adjacency + permutation tests for interaction scoring | TNBC immunotherapy prediction. Spatial contact between GzmB+ CD8+ T cells and cancer cells predicted response. |
+| Study | How NicheCompass Was Used | Context |
+|-------|-------------------------|---------|
+| Cardiac-immune microniches, *bioRxiv* 2026 | Segmented zebrafish heart injury area into 7 distinct microniches with distinct cell-cell communication programs | Cardiac regeneration. Identified immune microniches driving macrophage states in the regenerating heart. |
+| Oligodendroglia vulnerability, *Acta Neuropathologica* 2025 | Identified cellular domains by integrating spatial transcriptomics across samples | Parkinson's disease. Characterized oligodendroglia vulnerability in the human dorsal striatum. |
+| Skin fibroblasts atlas, *Nature Immunology* 2025 | Ran NicheCompass with 1,024 spatially variable genes, 8 neighbors per cell | Atopic dermatitis. Revealed shared disease-related fibroblast subtypes across tissues. |
+
+!!! note "Adoption status"
+    NicheCompass was published in March 2025 and adoption is still early. Most spatial CCC studies currently use CellChat (Wang/Liu et al. 2025), stLearn (Prakrithi et al. 2025), or custom L-R analysis (Peng/Kadara et al. 2026) rather than NicheCompass.
 
 **Relevance to our pipeline:** The only communication tool paper-tested on both Xenium and CosMx. Provides mechanistic interpretation of *why* niches exist (L-R programs), not just *where* they are. Applied to D1 + D4 Xenium for discovery, V1 CosMx for validation. CODEX skipped (protein-only, incompatible).
 
@@ -115,14 +119,10 @@ CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 
 **Platform coverage:** Paper-tested on Visium (DLPFC), Slide-seq (mouse cerebellum), CosMx (NSCLC), and Xenium (breast cancer). The niche-LR extension requires sufficient L-R gene pairs in the panel — it cannot run on Xenium's ~300-gene panel but works on CosMx's ~1,000-gene panel and whole-transcriptome platforms.
 
-**Used in published studies:**
+**Adoption in published studies:**
 
-| Study | How Niche-Dependent Gene Analysis Was Used | Context |
-|-------|------------------------------------------|---------|
-| Peng/Kadara et al., Cancer Cell 2026 | Identified stage-specific transcriptional programs in spatially defined niches | Lung precancer. Found that epithelial-proinflammatory niches have distinct gene programs at each disease stage (AAH → AIS → MIA → LUAD). |
-| Meyer/Bodenmiller et al., Cancer Cell 2025 | Differential expression across spatial immune phenotypes (inflamed vs. excluded vs. cold) | TNBC stratification. Gene programs differed between CD8-infiltrated and CD8-excluded niches, validated in RNA-seq and scRNA-seq cohorts. |
-| Sorin et al., Nature 2023 | Activation-state profiling across cellular neighborhoods | Lung adenocarcinoma. Protein activation markers (PD1, PDL1, HIF-1a) varied across B cell-enriched vs. macrophage-enriched neighborhoods. |
-| Klughammer et al., Nature Medicine 2024 | Spatial DE: genes differentially expressed near vs. far from T/NK cells | Metastatic breast cancer. Identified potential immune evasion programs in malignant cells spatially distant from immune cells. |
+!!! note "Adoption status"
+    Niche-DE was published in 2024 and no independent studies using it as a pipeline tool have been confirmed yet. The concept of niche-dependent gene analysis is widely practiced — papers like Peng/Kadara et al. (Cancer Cell 2026), Meyer/Bodenmiller et al. (Cancer Cell 2025), and Klughammer et al. (Nature Medicine 2024) all test differential expression across spatial niches — but they use custom DE approaches or standard tools (edgeR, DESeq2) rather than Niche-DE specifically. Niche-DE's advantage over these approaches is that it explicitly controls for spatial autocorrelation, which standard DE methods do not.
 
 **Relevance to our pipeline:** The only spatial-aware DE tool paper-tested on both Xenium and CosMx. Standard DE methods have 86-95% false positive rates on spatial data due to spatial autocorrelation (smiDE, Genome Biology 2025). Niche-DE controls for this. Core niche-DE works on Xenium; the niche-LR mechanistic extension is available on CosMx (V1) where the panel is larger.
 
@@ -131,10 +131,10 @@ CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 ## Summary
 
 | Tool | Task | Works on Xenium? | Works on CosMx? | Works on CODEX? | Small Panel Limitation |
-|------|------|:---:|:---:|:---:|----------------------|
-| **CellCharter** | Niche ID | :warning: (listed, untested) | :white_check_mark: | :white_check_mark: | None — composition-based, not gene-dependent |
-| **NicheCompass** | Communication | :white_check_mark: | :white_check_mark: | :x: | Loses L-R programs on ~300-gene panels |
-| **Niche-DE** | Gene programs | :white_check_mark: | :white_check_mark: | :x: | Core works; niche-LR extension unavailable on small panels |
+|------|------|-----------------|----------------|----------------|----------------------|
+| **CellCharter** | Niche ID | Likely (listed, untested) | **Yes** | **Yes** | None — composition-based, not gene-dependent |
+| **NicheCompass** | Communication | **Yes** | **Yes** | No | Loses L-R programs on ~300-gene panels |
+| **Niche-DE** | Gene programs | **Yes** | **Yes** | No | Core works; niche-LR extension unavailable on small panels |
 
 These three tools were selected because they are the **best-validated options for our specific platforms** (Xenium, CosMx, CODEX). Most competing tools were developed on Visium or MERFISH and have not been tested on the platforms in our datasets.
 

@@ -1,0 +1,2599 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Every method defines "niche" differently. This site tells you how — and what each definition can and cannot find.">
+      
+      
+      
+        <link rel="canonical" href="https://liudengzhang.github.io/awesome-spatial-omics-niche/hackathon/codex-analysis/">
+      
+      
+        <link rel="prev" href="../he-integration/">
+      
+      
+        <link rel="next" href="../../glossary/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>CODEX Analysis - Awesome Spatial Omics Niche</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#codex-niche-analysis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Awesome Spatial Omics Niche" class="md-header__button md-logo" aria-label="Awesome Spatial Omics Niche" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Awesome Spatial Omics Niche
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CODEX Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LiudengZhang/awesome-spatial-omics-niche" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LiudengZhang/awesome-spatial-omics-niche
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../concepts/what-is-a-niche/" class="md-tabs__link">
+          
+  
+  
+  Concepts
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../methods/composition-based/" class="md-tabs__link">
+          
+  
+  
+  Methods
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deep-reads/" class="md-tabs__link">
+          
+  
+  
+  Deep Reads
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../benchmarks/state-of-benchmarking/" class="md-tabs__link">
+          
+  
+  
+  Benchmarks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../datasets/datasets/" class="md-tabs__link">
+          
+  
+  
+  Datasets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../synthesis/definition-shapes-discovery/" class="md-tabs__link">
+          
+  
+  
+  Synthesis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../colin-stroud-2026/" class="md-tabs__link">
+          
+  
+  
+  Hackathon
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Awesome Spatial Omics Niche" class="md-nav__button md-logo" aria-label="Awesome Spatial Omics Niche" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Awesome Spatial Omics Niche
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LiudengZhang/awesome-spatial-omics-niche" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LiudengZhang/awesome-spatial-omics-niche
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Concepts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/what-is-a-niche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Is a Niche?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/niche-vs-domain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Niche vs Domain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/functional-niche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functional Niche
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/decision-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decision Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/composition-based/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Composition-Based
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/expression-based/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expression-Based
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/covariance-based/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Covariance-Based
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/communication-based/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Communication-Based
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/morphology-based/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Morphology-Based
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/foundation-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundation Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/domain-detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Reads
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep Reads
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/schurch-2020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schurch 2020
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/cellcharter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CellCharter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/banksy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BANKSY
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/nichecompass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NicheCompass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/envi-covet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENVI/COVET
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/nicheformer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nicheformer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/commot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COMMOT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/tesla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TESLA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/niche-de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Niche-DE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-reads/cytocommunity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CytoCommunity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Benchmarks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../benchmarks/state-of-benchmarking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    State of Benchmarking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../benchmarks/what-to-measure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What to Measure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datasets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Datasets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datasets/datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synthesis
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Synthesis
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../synthesis/definition-shapes-discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definition Shapes Discovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../synthesis/from-correlation-to-causation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    From Correlation to Causation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hackathon
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hackathon
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../colin-stroud-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colin Stroud 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tool-selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Selection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../literature-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Literature Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Compatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H&E Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CODEX Analysis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CODEX Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-codex-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The CODEX Workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-at-each-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools at Each Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-dominant-niche-method-k-nn-cellular-neighborhoods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Dominant Niche Method: k-NN Cellular Neighborhoods
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#literature-review-10-representative-papers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literature Review: 10 Representative Papers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Literature Review: 10 Representative Papers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary Table
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paper-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paper Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paper Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goltsev-et-al-2018-the-codex-origin-paper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goltsev et al. 2018 — The CODEX Origin Paper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schurch-et-al-2020-cellular-neighborhoods-in-crc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schurch et al. 2020 — Cellular Neighborhoods in CRC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risom-et-al-2022-dcis-to-invasive-breast-cancer-transition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risom et al. 2022 — DCIS-to-Invasive Breast Cancer Transition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#danenberg-et-al-2022-breast-cancer-tme-structures-metabric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Danenberg et al. 2022 — Breast Cancer TME Structures (METABRIC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hoch-et-al-2022-chemokine-niches-in-melanoma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoch et al. 2022 — Chemokine Niches in Melanoma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wang-et-al-2023-spatial-predictors-of-immunotherapy-response-in-tnbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wang et al. 2023 — Spatial Predictors of Immunotherapy Response in TNBC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellcharter-2024-multi-platform-niche-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CellCharter 2024 — Multi-Platform Niche Identification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cytocommunity-2024-supervised-niche-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CytoCommunity 2024 — Supervised Niche Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matusiak-et-al-2024-macrophage-niches-in-colon-and-breast-cancer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matusiak et al. 2024 — Macrophage Niches in Colon and Breast Cancer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chen-et-al-2025-immune-colony-niches-in-sclc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chen et al. 2025 — Immune Colony Niches in SCLC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-across-papers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patterns Across Papers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patterns Across Papers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-consistent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's consistent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-varies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What varies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's missing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-codex-workflow-for-the-hackathon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended CODEX Workflow for the Hackathon
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="codex-niche-analysis">CODEX Niche Analysis<a class="headerlink" href="#codex-niche-analysis" title="Permanent link">&para;</a></h1>
+<p>This page documents how spatial niche analysis is performed on protein-based spatial data (CODEX, PhenoCycler, MIBI-TOF, IMC), based on a review of 10 representative papers. Since CODEX measures proteins (~30-60 markers) rather than transcripts, the niche analysis workflow differs fundamentally from RNA-based platforms.</p>
+<hr />
+<h2 id="the-codex-workflow">The CODEX Workflow<a class="headerlink" href="#the-codex-workflow" title="Permanent link">&para;</a></h2>
+<p>The standard CODEX niche analysis pipeline has 5 steps:</p>
+<ol>
+<li><strong>Cell Segmentation</strong> — identify individual cells from multiplexed images</li>
+<li><strong>Cell Typing</strong> — classify cells by protein marker expression</li>
+<li><strong>Niche Identification</strong> — define spatial neighborhoods by cell-type composition</li>
+<li><strong>Niche Characterization</strong> — functional analysis via marker co-expression and spatial enrichment</li>
+<li><strong>Clinical Correlation</strong> — link niches to patient outcomes or treatment response</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">No cell-cell communication step</p>
+<p>Unlike RNA-based workflows, CODEX analysis does <strong>not</strong> include a ligand-receptor communication step. CCC tools (NicheCompass, CellChat, COMMOT) rely on gene-symbol L-R databases that do not exist for protein panels. Functional characterization on protein data uses marker intensity analysis, cell-type interaction frequencies, and spatial enrichment instead.</p>
+</div>
+<hr />
+<h2 id="tools-at-each-step">Tools at Each Step<a class="headerlink" href="#tools-at-each-step" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Common Tools</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Segmentation</strong></td>
+<td>Mesmer/DeepCell, CellProfiler, CODEX toolkit, Steinbock</td>
+<td>Deep learning pipelines (Mesmer) now standard; older papers used CellProfiler</td>
+</tr>
+<tr>
+<td><strong>Cell Typing</strong></td>
+<td>FlowSOM, X-shift/VorteX, Leiden (scanpy)</td>
+<td>FlowSOM and X-shift are cytometry-native; Leiden increasingly used</td>
+</tr>
+<tr>
+<td><strong>Niche ID</strong></td>
+<td>k-NN frequency vectors + K-means (Schurch-style), CellCharter, CytoCommunity, ColonyMap</td>
+<td>k=10 KNN with cell-type frequency vectors is the dominant approach</td>
+</tr>
+<tr>
+<td><strong>Characterization</strong></td>
+<td>Marker co-expression, spatial enrichment, cell-cell interaction scoring, MISTy</td>
+<td>No L-R tools; MISTy is the only computational niche characterization tool verified on protein data</td>
+</tr>
+<tr>
+<td><strong>Clinical Correlation</strong></td>
+<td>Kaplan-Meier, Cox regression, linear mixed models</td>
+<td>Standard survival analysis</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="the-dominant-niche-method-k-nn-cellular-neighborhoods">The Dominant Niche Method: k-NN Cellular Neighborhoods<a class="headerlink" href="#the-dominant-niche-method-k-nn-cellular-neighborhoods" title="Permanent link">&para;</a></h2>
+<p>Most CODEX niche papers (6/10 reviewed) use a variant of the approach introduced by Schurch et al. (2020):</p>
+<ol>
+<li>Build a k-nearest-neighbor graph (typically k=10) from cell coordinates</li>
+<li>For each cell, compute a frequency vector: the proportion of each cell type among its k neighbors</li>
+<li>Cluster these frequency vectors (K-means or Leiden) into cellular neighborhoods (CNs)</li>
+</ol>
+<p>This is a <strong>composition-based</strong> niche definition — niches are defined by the mix of cell types present, not by gene expression or signaling.</p>
+<p><strong>Computational tools that automate this:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What It Adds Beyond k-NN + K-means</th>
+<th>Paper-Tested On</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CellCharter</strong></td>
+<td>Multi-scale GNN embeddings + GMM with automatic K selection</td>
+<td>CODEX (CRC), IMC (breast), CosMx, MERSCOPE, Visium</td>
+</tr>
+<tr>
+<td><strong>CytoCommunity</strong></td>
+<td>Supervised GNN that uses condition labels to find disease-relevant niches</td>
+<td>CODEX (CRC), MIBI-TOF (TNBC)</td>
+</tr>
+<tr>
+<td><strong>ColonyMap</strong></td>
+<td>Detects spatially assembled "colonies" (densely co-localized communities)</td>
+<td>CODEX/PhenoCycler (SCLC)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">CellCharter is the recommended starting point</p>
+<p>CellCharter is the most versatile option: it works on both RNA and protein platforms, handles multi-sample integration, and automatically selects the number of niches. It is also the tool used by other hackathon team members on Xenium, enabling direct cross-modality comparison.</p>
+</div>
+<hr />
+<h2 id="literature-review-10-representative-papers">Literature Review: 10 Representative Papers<a class="headerlink" href="#literature-review-10-representative-papers" title="Permanent link">&para;</a></h2>
+<h3 id="summary-table">Summary Table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Paper</th>
+<th>Platform</th>
+<th>Cancer</th>
+<th>Markers</th>
+<th>Niche Method</th>
+<th>Clinical Linkage</th>
+<th>Journal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Goltsev et al. 2018</td>
+<td>CODEX</td>
+<td>Mouse spleen</td>
+<td>30</td>
+<td>i-niche (Delaunay + K-means)</td>
+<td>No (mouse)</td>
+<td>Cell</td>
+</tr>
+<tr>
+<td>Schurch et al. 2020</td>
+<td>CODEX</td>
+<td>Colorectal</td>
+<td>56</td>
+<td>k=10 KNN -&gt; 9 CNs</td>
+<td>Yes (survival)</td>
+<td>Cell</td>
+</tr>
+<tr>
+<td>Risom et al. 2022</td>
+<td>MIBI-TOF</td>
+<td>Breast (DCIS-&gt;IBC)</td>
+<td>37</td>
+<td>TME state mapping</td>
+<td>Yes (recurrence)</td>
+<td>Cell</td>
+</tr>
+<tr>
+<td>Danenberg et al. 2022</td>
+<td>IMC</td>
+<td>Breast (n=693)</td>
+<td>37</td>
+<td>Graph community detection</td>
+<td>Yes (survival)</td>
+<td>Nature Genetics</td>
+</tr>
+<tr>
+<td>Hoch et al. 2022</td>
+<td>IMC</td>
+<td>Melanoma</td>
+<td>~40</td>
+<td>Chemokine patch + TLS</td>
+<td>Yes (immunotherapy)</td>
+<td>Science Immunology</td>
+</tr>
+<tr>
+<td>Wang et al. 2023</td>
+<td>IMC</td>
+<td>TNBC (n=243)</td>
+<td>43</td>
+<td>Cell interaction scoring</td>
+<td>Yes (immunotherapy)</td>
+<td>Nature</td>
+</tr>
+<tr>
+<td>CellCharter 2024</td>
+<td>CODEX/IMC</td>
+<td>Lung, CRC</td>
+<td>30+</td>
+<td>GNN + GMM</td>
+<td>Yes (prognosis)</td>
+<td>Nature Genetics</td>
+</tr>
+<tr>
+<td>CytoCommunity 2024</td>
+<td>CODEX + MIBI-TOF</td>
+<td>CRC, TNBC</td>
+<td>56</td>
+<td>GNN graph partitioning</td>
+<td>Yes (risk)</td>
+<td>Nature Methods</td>
+</tr>
+<tr>
+<td>Matusiak et al. 2024</td>
+<td>CODEX</td>
+<td>Colon + breast</td>
+<td>36</td>
+<td>k=10 KNN -&gt; 30 clusters</td>
+<td>Yes (survival)</td>
+<td>Cancer Discovery</td>
+</tr>
+<tr>
+<td>Chen et al. 2025</td>
+<td>CODEX/PhenoCycler</td>
+<td>SCLC</td>
+<td>35</td>
+<td>ColonyMap</td>
+<td>Yes (immunotherapy)</td>
+<td>Cancer Cell</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="paper-details">Paper Details<a class="headerlink" href="#paper-details" title="Permanent link">&para;</a></h3>
+<h4 id="goltsev-et-al-2018-the-codex-origin-paper">Goltsev et al. 2018 — The CODEX Origin Paper<a class="headerlink" href="#goltsev-et-al-2018-the-codex-origin-paper" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Goltsev Y, Samusik N, Kennedy-Darling J, et al. <em>Deep profiling of mouse splenic architecture with CODEX multiplexed imaging.</em> Cell 174: 968-981 (2018).</p>
+<p><strong>Platform:</strong> CODEX, 30 markers on mouse spleen (not cancer — included because it introduced the i-niche concept and computational framework that all subsequent CODEX papers build on).</p>
+<p><strong>Workflow:</strong>
+- Segmentation: CellProfiler + custom pipeline
+- Cell typing: X-shift/VorteX -&gt; 27 phenotypic clusters
+- Niche ID: Delaunay triangulation -&gt; i-niche frequency vectors -&gt; K-means (K=100)
+- Characterization: Mapping i-niches to anatomical compartments; healthy vs. lupus comparison</p>
+<p><strong>Key finding:</strong> A cell's spatial neighborhood strongly influences its protein expression levels, independent of cell identity. This established that spatial context is a determinant of cell state.</p>
+<hr />
+<h4 id="schurch-et-al-2020-cellular-neighborhoods-in-crc">Schurch et al. 2020 — Cellular Neighborhoods in CRC<a class="headerlink" href="#schurch-et-al-2020-cellular-neighborhoods-in-crc" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Schurch CM, Bhate SS, Barlow GL, et al. <em>Coordinated cellular neighborhoods orchestrate antitumoral immunity at the colorectal cancer invasive front.</em> Cell 182: 1341-1359 (2020).</p>
+<p><strong>Platform:</strong> CODEX, 56 markers on colorectal cancer TMAs (140 regions, 35 patients).</p>
+<p><strong>Workflow:</strong>
+- Segmentation: CODEX toolkit
+- Cell typing: X-shift/VorteX -&gt; 26 cell types
+- Niche ID: k=10 KNN -&gt; cell-type frequency vectors -&gt; K-means -&gt; 9 cellular neighborhoods
+- Characterization: Tucker tensor decomposition, CN coupling/fragmentation metrics
+- Clinical: Cox regression, Kaplan-Meier survival</p>
+<p><strong>Key finding:</strong> Nine conserved cellular neighborhoods identified. Two patient archetypes: Crohn's-like reaction (TLS-rich, better prognosis) vs. diffuse inflammatory infiltration (no TLS, worse). PD-1+CD4+ T cells in granulocyte neighborhoods predicted survival in high-risk patients.</p>
+<div class="admonition info">
+<p class="admonition-title">The origin of CODEX niche analysis</p>
+<p>This paper established the k=10 KNN -&gt; frequency vector -&gt; K-means pipeline that most subsequent CODEX papers follow. It remains the most cited spatial niche paper in the protein spatial field.</p>
+</div>
+<hr />
+<h4 id="risom-et-al-2022-dcis-to-invasive-breast-cancer-transition">Risom et al. 2022 — DCIS-to-Invasive Breast Cancer Transition<a class="headerlink" href="#risom-et-al-2022-dcis-to-invasive-breast-cancer-transition" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Risom T, Glass DR, Averbukh I, et al. <em>Transition to invasive breast cancer is associated with progressive changes in the structure and composition of tumor stroma.</em> Cell 185: 299-310 (2022).</p>
+<p><strong>Platform:</strong> MIBI-TOF, 37 markers on breast cancer surgical resections (79 cases).</p>
+<p><strong>Workflow:</strong>
+- Segmentation: Mesmer/DeepCell
+- Cell typing: FlowSOM -&gt; 16 cell classes
+- Niche ID: Four TME states via spatial compartment mapping (myoepithelial, stromal, immune)
+- Characterization: Myoepithelial disruption quantification, stromal activation markers</p>
+<p><strong>Key finding:</strong> Myoepithelial disruption was paradoxically more advanced in DCIS that did <em>not</em> progress to invasive cancer, suggesting protective remodeling. Spatial proteomic signature predicted invasive recurrence from DCIS.</p>
+<hr />
+<h4 id="danenberg-et-al-2022-breast-cancer-tme-structures-metabric">Danenberg et al. 2022 — Breast Cancer TME Structures (METABRIC)<a class="headerlink" href="#danenberg-et-al-2022-breast-cancer-tme-structures-metabric" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Danenberg E, Bardwell H, Zanotelli VRT, et al. <em>Breast tumor microenvironment structures are associated with genomic features and clinical outcome.</em> Nature Genetics 54: 660-669 (2022).</p>
+<p><strong>Platform:</strong> IMC, 37 markers on 693 breast tumors from the METABRIC cohort.</p>
+<p><strong>Workflow:</strong>
+- Segmentation: ilastik + CellProfiler
+- Cell typing: FlowSOM -&gt; epithelial, stromal, leukocyte lineages
+- Niche ID: Graph community detection -&gt; 10 recurrent multicellular structures
+- Characterization: Enrichment for proliferative, regulatory, and exhausted immune markers</p>
+<p><strong>Key finding:</strong> Ten recurrent TME structures identified. A "suppressed expansion" structure (FoxP3+ Tregs + PD-1+ exhausted T cells + proliferating cells) predicted poor outcome in ER+ breast cancer, independently of genomic classifiers. Spatial architecture adds prognostic signal beyond PAM50 subtypes.</p>
+<hr />
+<h4 id="hoch-et-al-2022-chemokine-niches-in-melanoma">Hoch et al. 2022 — Chemokine Niches in Melanoma<a class="headerlink" href="#hoch-et-al-2022-chemokine-niches-in-melanoma" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Hoch T, Schulz D, Eling N, et al. <em>Multiplexed imaging mass cytometry of the chemokine milieus in melanoma characterizes features of the response to immunotherapy.</em> Science Immunology 7: eabk1692 (2022).</p>
+<p><strong>Platform:</strong> IMC with protein + chemokine RNA co-detection (~40 markers), 69 metastatic melanoma patients.</p>
+<p><strong>Workflow:</strong>
+- Segmentation: Steinbock
+- Cell typing: Protein marker clustering -&gt; CD8+ T cells, macrophages, B cells, tumor cells, etc.
+- Niche ID: Chemokine "patch" spatial enrichment + TLS niche co-localization
+- Characterization: RNA-protein co-detection attributed chemokine sources to specific cell types within niches</p>
+<p><strong>Key finding:</strong> TLS-like chemokine niches enriched for TCF7+ naive-like T cells predicted checkpoint blockade response. CXCL13+ exhausted T cells co-localized with CXCL9/10 patches in infiltrated tumors.</p>
+<hr />
+<h4 id="wang-et-al-2023-spatial-predictors-of-immunotherapy-response-in-tnbc">Wang et al. 2023 — Spatial Predictors of Immunotherapy Response in TNBC<a class="headerlink" href="#wang-et-al-2023-spatial-predictors-of-immunotherapy-response-in-tnbc" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Wang XQ, Danenberg E, Huang CS, et al. <em>Spatial predictors of immunotherapy response in triple-negative breast cancer.</em> Nature 621: 868-876 (2023).</p>
+<p><strong>Platform:</strong> IMC, 43 markers on TNBC (243 patients from a randomized neoadjuvant ICB trial, with baseline + on-treatment + post-treatment biopsies).</p>
+<p><strong>Workflow:</strong>
+- Segmentation: Semi-supervised epithelial/TME separation
+- Cell typing: Expression clustering -&gt; 17 epithelial + 20 TME phenotypes
+- Niche ID: Cell density + phenotype-specific interaction scoring
+- Characterization: Longitudinal spatial remodeling across 3 biopsy timepoints</p>
+<p><strong>Key finding:</strong> Proliferating CD8+TCF1+ T cells and MHCII+ cancer cells were the dominant baseline predictors of ICB response. Combining baseline and on-treatment spatial features improved response prediction. This is the most clinically direct protein spatial niche paper — it links spatial organization to treatment response in a randomized trial.</p>
+<hr />
+<h4 id="cellcharter-2024-multi-platform-niche-identification">CellCharter 2024 — Multi-Platform Niche Identification<a class="headerlink" href="#cellcharter-2024-multi-platform-niche-identification" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Varrone M, Tavernari D, Santamaria-Martinez A, Walsh LA, Ciriello G. <em>CellCharter reveals spatial cell niches associated with tissue remodeling and cell plasticity.</em> Nature Genetics 56: 74-84 (2024).</p>
+<p><strong>Platform:</strong> Paper-tested on CODEX (CRC), IMC (breast cancer), CosMx, MERSCOPE, Visium.</p>
+<p><strong>Workflow:</strong>
+- Niche ID: GNN embeddings of spatial neighborhoods -&gt; GMM clustering with stability-based model selection
+- Multi-scale: captures niches at different spatial resolutions simultaneously
+- Cross-platform: same method on both RNA and protein data</p>
+<p><strong>Key finding (CODEX/IMC):</strong> Identified tumor-associated neutrophil niches co-localizing with hypoxia markers, associated with poor prognosis in lung cancer.</p>
+<hr />
+<h4 id="cytocommunity-2024-supervised-niche-discovery">CytoCommunity 2024 — Supervised Niche Discovery<a class="headerlink" href="#cytocommunity-2024-supervised-niche-discovery" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Hu Y, Rong J, Xu Y, et al. <em>Unsupervised and supervised discovery of tissue cellular neighborhoods from cell phenotypes.</em> Nature Methods 21: 267-278 (2024).</p>
+<p><strong>Platform:</strong> Paper-tested on CODEX (CRC, 56 markers) and MIBI-TOF (TNBC).</p>
+<p><strong>Workflow:</strong>
+- Niche ID: GNN-based graph partitioning; supervised mode uses sample-level condition labels to discover disease-relevant tissue cellular neighborhoods (TCNs)
+- Characterization: Hypergeometric cell-type enrichment per TCN</p>
+<p><strong>Key finding:</strong> In high-risk CRC, identified granulocyte-enriched and CAF-enriched TCNs absent in low-risk tumors. TCN composition correlated with risk stratification and survival.</p>
+<hr />
+<h4 id="matusiak-et-al-2024-macrophage-niches-in-colon-and-breast-cancer">Matusiak et al. 2024 — Macrophage Niches in Colon and Breast Cancer<a class="headerlink" href="#matusiak-et-al-2024-macrophage-niches-in-colon-and-breast-cancer" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Matusiak M, Hickey JW, van IJzendoorn DGP, et al. <em>Spatially segregated macrophage populations predict distinct outcomes in colon cancer.</em> Cancer Discovery 14: 1418-1439 (2024).</p>
+<p><strong>Platform:</strong> CODEX, 36 markers on colon (32 cases) and breast (36 cases) cancer TMAs.</p>
+<p><strong>Workflow:</strong>
+- Segmentation: CODEX toolkit
+- Cell typing: Leiden clustering (scanpy) + manual annotation
+- Niche ID: k=10 KNN -&gt; 30 neighborhood clusters (Schurch-style)
+- Characterization: Linear mixed-effects models; IHC and IF validation</p>
+<p><strong>Key finding:</strong> Five spatially distinct macrophage populations occupied conserved niche architectures: FOLR2+ in plasma cell niches, LYVE1+ in perivascular niches, SPP1+ in hypoxic zones, NLRP3+ with neutrophils. IL4I1+ macrophages predicted good outcomes; SPP1+ predicted poor outcomes in colon cancer.</p>
+<hr />
+<h4 id="chen-et-al-2025-immune-colony-niches-in-sclc">Chen et al. 2025 — Immune Colony Niches in SCLC<a class="headerlink" href="#chen-et-al-2025-immune-colony-niches-in-sclc" title="Permanent link">&para;</a></h4>
+<p><strong>Citation:</strong> Chen H, Deng C, Gao J, et al. <em>Integrative spatial analysis reveals tumor heterogeneity and immune colony niche related to clinical outcomes in small cell lung cancer.</em> Cancer Cell 43: 519-536 (2025).</p>
+<p><strong>Platform:</strong> CODEX/PhenoCycler, 35 markers on SCLC (165 patients, 267 images, &gt;9.3M cells).</p>
+<p><strong>Workflow:</strong>
+- Segmentation: Deep learning pipeline
+- Cell typing: Unsupervised clustering -&gt; tumor subtypes, macrophages, T cells, NK/NKT, B cells, stroma
+- Niche ID: ColonyMap — novel algorithm detecting densely co-localized cellular communities
+- Characterization: Multi-omics integration (genomics + CODEX)</p>
+<p><strong>Key finding:</strong> An antitumoral immune colony niche (MT2: macrophages + CD8+ T cells + NKT cells) predicted immunotherapy response and superior survival. ColonyMap-derived spatial features outperformed standard cell-type abundance metrics.</p>
+<hr />
+<h2 id="patterns-across-papers">Patterns Across Papers<a class="headerlink" href="#patterns-across-papers" title="Permanent link">&para;</a></h2>
+<h3 id="whats-consistent">What's consistent<a class="headerlink" href="#whats-consistent" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Composition-based niche ID dominates</strong>: 8/10 papers define niches by cell-type composition of neighborhoods</li>
+<li><strong>k=10 is standard</strong>: Most papers use k=10 nearest neighbors for neighborhood construction</li>
+<li><strong>Clinical linkage is expected</strong>: 9/10 papers connect niches to patient outcomes or treatment response</li>
+<li><strong>Segmentation is solved</strong>: Deep learning (Mesmer) or platform-native tools; not a bottleneck</li>
+<li><strong>No CCC tools used</strong>: Zero papers apply ligand-receptor communication analysis to protein data</li>
+</ul>
+<h3 id="what-varies">What varies<a class="headerlink" href="#what-varies" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Niche granularity</strong>: From 4 TME states (Risom) to 100 i-niches (Goltsev) — no consensus on optimal resolution</li>
+<li><strong>Cell typing method</strong>: X-shift (older), FlowSOM (cytometry standard), Leiden (newer, scanpy-based)</li>
+<li><strong>Characterization approach</strong>: Ranges from simple enrichment tests to tensor decomposition to longitudinal spatial remodeling</li>
+</ul>
+<h3 id="whats-missing">What's missing<a class="headerlink" href="#whats-missing" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>No standardized functional characterization</strong>: Unlike RNA platforms (where NicheCompass/Niche-DE provide structured analysis), protein niche characterization is ad hoc</li>
+<li><strong>No cross-modality validation</strong>: Only CellCharter has been applied to both RNA and protein data from the same tissue</li>
+<li><strong>Limited panel overlap</strong>: Each study uses a different antibody panel, making cross-study comparison difficult</li>
+</ul>
+<hr />
+<h2 id="recommended-codex-workflow-for-the-hackathon">Recommended CODEX Workflow for the Hackathon<a class="headerlink" href="#recommended-codex-workflow-for-the-hackathon" title="Permanent link">&para;</a></h2>
+<p>Based on the literature review, the recommended workflow for CODEX data:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Tool</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Segmentation</strong></td>
+<td>Mesmer/DeepCell or platform-provided</td>
+<td>Standard; deep learning preferred</td>
+</tr>
+<tr>
+<td><strong>Cell Typing</strong></td>
+<td>Leiden clustering (scanpy)</td>
+<td>Consistent with team's RNA workflow; scanpy ecosystem</td>
+</tr>
+<tr>
+<td><strong>Niche ID</strong></td>
+<td>CellCharter</td>
+<td>Paper-tested on CODEX; same tool as RNA team -&gt; enables cross-modality comparison</td>
+</tr>
+<tr>
+<td><strong>Characterization</strong></td>
+<td>Marker intensity analysis + spatial enrichment + MISTy</td>
+<td>MISTy is the only computational tool verified on protein spatial data for niche characterization</td>
+</tr>
+<tr>
+<td><strong>Clinical Correlation</strong></td>
+<td>Kaplan-Meier + Cox regression</td>
+<td>Standard</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Cross-modality concordance</p>
+<p>Using CellCharter on both CODEX and Xenium (from the same tissue in D1) enables the key hackathon question: <strong>do RNA niches and protein niches agree?</strong> This is directly modeled on CellCharter's own paper, which demonstrated cross-platform niche analysis.</p>
+</div>
+<hr />
+<p><em>See also: <a href="../data-compatibility/">Data Compatibility</a> | <a href="../tool-selection/">Tool Selection</a> | <a href="../literature-review/">Literature Review</a> | <a href="../../deep-reads/cellcharter/">CellCharter Deep Read</a></em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://hypothes.is/embed.js"></script>
+      
+    
+  </body>
+</html>

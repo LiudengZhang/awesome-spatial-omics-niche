@@ -14,14 +14,14 @@ Legend: **Yes** = paper-tested or independently validated | **Likely** = platfor
 
 | Tool | Xenium | Protein | CosMx | CODEX | Visium |
 |------|--------|---------|-------|-------|--------|
-| **CellCharter** | **Yes** | Likely | **Yes** | **Yes** | **Yes** |
-| **BANKSY** | **Yes** | No | **Yes** | No | **Yes** |
+| **CellCharter** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| **BANKSY** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | **NicheCompass** | **Yes** | No | **Yes** | No | No |
 | **Nicheformer** | **Yes** | No | No | No | **Yes** |
 | **ENVI/COVET** | **Yes** | No | No | No | No |
 | **SpiceMix** | No | No | No | No | No |
-| **CytoCommunity** | Likely | No | No | **Yes** | No |
-| **SpatialLDA** | No | No | No | **Yes** | No |
+| **CytoCommunity** | Likely | **Yes** | No | **Yes** | No |
+| **SpatialLDA** | No | Likely | No | **Yes** | No |
 | **Novae** | **Yes** | No | No | No | **Yes** |
 
 ### Functional Characterization Tools
@@ -35,12 +35,12 @@ Legend: **Yes** = paper-tested or independently validated | **Likely** = platfor
 | **SpatialDM** | No | No | No | No | **Yes** |
 | **Niche-DE** | **Yes** | No | **Yes** | No | **Yes** |
 | **NCEM** | No | No | No | No | **Yes** |
-| **MISTy** | Likely | No | No | No | **Yes** |
+| **MISTy** | Likely | **Yes** | No | **Yes** | **Yes** |
 | **TESLA** | No | No | No | No | **Yes** |
 | **METI** | No | No | No | No | **Yes** |
 
-!!! info "Xenium compatibility is broader than expected"
-    After checking each tool's GitHub repo, documentation, and issues, **8 of 19 tools support Xenium** (paper-tested or with dedicated docs/tutorials), and 4 more are likely compatible (platform-agnostic design). Key Xenium evidence: BANKSY ranked best on Xenium in a Nature Methods 2025 benchmark; CellChat has a dedicated Xenium FAQ; Nicheformer and Novae were pretrained on Xenium data; ENVI/COVET was paper-tested on Xenium breast cancer. SpaTalk crashes on Xenium-scale data (unresolved). NCEM expects Visium-style metadata and breaks on Xenium.
+!!! info "Compatibility is broader than expected"
+    After checking each tool's GitHub repo, documentation, and issues: **8/19 tools support Xenium** (paper-tested or with dedicated docs/tutorials), and 4 more are likely compatible. **4/19 tools support protein data** (CODEX/IMC/MIBI-TOF): CellCharter (CODEX, IMC), BANKSY (CODEX), CytoCommunity (MIBI-TOF), MISTy (IMC). Most communication and DE tools (NicheCompass, CellChat, COMMOT, Niche-DE) are RNA-only because they rely on gene-symbol-based L-R databases. Foundation models (Nicheformer, Novae) are transcriptomics-only by design.
 
 ---
 

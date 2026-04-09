@@ -8,39 +8,39 @@ This page maps our hackathon tools against our specific platforms, documents pan
 
 How each tool performs on our specific platforms. Verified against source papers and codebases.
 
-Legend: **Yes** = paper-tested | **Likely** = listed/likely but untested | **No** = incompatible or untested
+Legend: **Yes** = paper-tested or independently validated | **Likely** = platform-agnostic design, should work but no Xenium-specific docs | **No** = incompatible, crashes, or requires unsupported data format
 
 ### Niche Recognition Tools
 
 | Tool | Xenium | Protein | CosMx | CODEX | Visium |
 |------|--------|---------|-------|-------|--------|
 | **CellCharter** | **Yes** | Likely | **Yes** | **Yes** | **Yes** |
-| **BANKSY** | No | No | **Yes** | No | **Yes** |
+| **BANKSY** | **Yes** | No | **Yes** | No | **Yes** |
 | **NicheCompass** | **Yes** | No | **Yes** | No | No |
-| **Nicheformer** | No | No | No | No | **Yes** |
-| **ENVI/COVET** | No | No | No | No | No |
+| **Nicheformer** | **Yes** | No | No | No | **Yes** |
+| **ENVI/COVET** | **Yes** | No | No | No | No |
 | **SpiceMix** | No | No | No | No | No |
-| **CytoCommunity** | No | No | No | **Yes** | No |
+| **CytoCommunity** | Likely | No | No | **Yes** | No |
 | **SpatialLDA** | No | No | No | **Yes** | No |
-| **Novae** | Likely | No | No | No | **Yes** |
+| **Novae** | **Yes** | No | No | No | **Yes** |
 
 ### Functional Characterization Tools
 
 | Tool | Xenium | Protein | CosMx | CODEX | Visium |
 |------|--------|---------|-------|-------|--------|
 | **NicheCompass** | **Yes** | No | **Yes** | No | No |
-| **COMMOT** | No | No | No | No | **Yes** |
-| **CellChat v2** | No | No | No | No | **Yes** |
+| **COMMOT** | Likely | No | No | No | **Yes** |
+| **CellChat v2** | **Yes** | No | No | No | **Yes** |
 | **SpaTalk** | No | No | No | No | No |
 | **SpatialDM** | No | No | No | No | **Yes** |
 | **Niche-DE** | **Yes** | No | **Yes** | No | **Yes** |
 | **NCEM** | No | No | No | No | **Yes** |
-| **MISTy** | No | No | No | No | **Yes** |
+| **MISTy** | Likely | No | No | No | **Yes** |
 | **TESLA** | No | No | No | No | **Yes** |
 | **METI** | No | No | No | No | **Yes** |
 
-!!! warning "Takeaway"
-    Most tools were developed and tested on Visium or MERFISH. For our Xenium + CosMx data, only **CellCharter**, **NicheCompass**, and **Niche-DE** have verified compatibility. This is the primary reason they were selected.
+!!! info "Xenium compatibility is broader than expected"
+    After checking each tool's GitHub repo, documentation, and issues, **8 of 19 tools support Xenium** (paper-tested or with dedicated docs/tutorials), and 4 more are likely compatible (platform-agnostic design). Key Xenium evidence: BANKSY ranked best on Xenium in a Nature Methods 2025 benchmark; CellChat has a dedicated Xenium FAQ; Nicheformer and Novae were pretrained on Xenium data; ENVI/COVET was paper-tested on Xenium breast cancer. SpaTalk crashes on Xenium-scale data (unresolved). NCEM expects Visium-style metadata and breaks on Xenium.
 
 ---
 
@@ -53,7 +53,7 @@ Xenium's ~300-gene targeted panel creates specific limitations:
 | Too few genes for L-R matching | NicheCompass | Many L-R gene programs are lost because ligands or receptors are not in the panel | The NicheCompass paper used gene imputation for small-panel seqFISH data; core niche identification still works |
 | niche-LR extension fails | Niche-DE | The mechanistic niche-LR extension cannot match L-R pairs with ~300 genes | Core niche-DE (context-dependent gene identification) works fully; only the L-R extension is affected |
 | Covariance is less informative | ENVI/COVET | Gene-gene covariance tensors are sparse with 300 genes vs. whole transcriptome | Requires matched scRNA-seq (available in D4) for imputation via ENVI |
-| Expression-based methods lose resolution | BANKSY, SpiceMix | Neighbor expression augmentation is less distinctive with small panels | Better suited for whole-transcriptome platforms (Visium, MERFISH) |
+| Expression-based methods lose resolution | BANKSY, SpiceMix | Neighbor expression augmentation is less distinctive with small panels | BANKSY still ranked best on Xenium in benchmark (Nat Methods 2025); use lambda=0.2 for cell typing, skip log1p and HVG selection |
 
 CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 

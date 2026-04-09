@@ -14,7 +14,7 @@ Legend: **Yes** = paper-tested | **Likely** = listed/likely but untested | **No*
 
 | Tool | Xenium | Protein | CosMx | CODEX | Visium |
 |------|--------|---------|-------|-------|--------|
-| **CellCharter** | Likely | Likely | **Yes** | **Yes** | **Yes** |
+| **CellCharter** | **Yes** | Likely | **Yes** | **Yes** | **Yes** |
 | **BANKSY** | No | No | **Yes** | No | **Yes** |
 | **NicheCompass** | **Yes** | No | **Yes** | No | No |
 | **Nicheformer** | No | No | No | No | **Yes** |
@@ -69,16 +69,16 @@ CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 
 **Citation:** Varrone M, Tavernari D, Santamaria-Martínez A, Walsh LA, Ciriello G. *CellCharter reveals spatial cell niches associated with tissue remodeling and cell plasticity.* Nature Genetics 56: 74-84 (2024).
 
-**Platform coverage:** Paper-tested on CODEX (CRC, colorectal cancer), CosMx (NSCLC), MERSCOPE (mouse brain), Visium (breast cancer), IMC (breast cancer). Xenium and Visium HD are listed as supported but not paper-tested.
+**Platform coverage:** Paper-tested on CODEX (CRC, colorectal cancer), CosMx (NSCLC), MERSCOPE (mouse brain), Visium (breast cancer), IMC (breast cancer). Xenium is listed as supported and independently validated (see below).
 
 **Used in published studies:**
 
-| Study | How CellCharter Was Used | Context |
-|-------|------------------------|---------|
-| Restrepo et al., *Nature Genetics* 2026 | Ran CellCharter v0.3.4 with scANVI integration for spatial clustering; identified 10 multicellular neighborhoods at maximum stability | Human skin anatomy atlas. Single-cell spatial transcriptomic census of normal skin. |
-
-!!! note "Adoption status"
-    CellCharter is frequently cited as a method (e.g., in NicheCompass benchmark, spatial omics reviews) but actual pipeline usage in biological studies is still emerging. Many studies use conceptually similar neighborhood-composition approaches with custom code (e.g., Wang/Liu et al. Cancer Cell 2025) rather than CellCharter directly.
+| Study | Platform | How CellCharter Was Used | Context |
+|-------|----------|------------------------|---------|
+| Esophageal adenocarcinoma, *Cell Reports Medicine* 2025 | **Xenium (16 samples)** | Identified shared spatial niches; assigned CellCharter clusters and computed cell-type proportions per cluster | Primary and metastatic esophageal adenocarcinoma across 6 patients. |
+| Restrepo et al., *Nature Genetics* 2026 | MERFISH | Ran CellCharter v0.3.4 with scANVI; identified 10 multicellular neighborhoods | Human skin anatomy atlas (~1.2M cells, 114 samples). |
+| SACCELERATOR benchmark, 2025 | **Xenium (mouse brain)** | Benchmarked CellCharter among 22 spatial clustering methods; among top performers by ARI | Consensus benchmarking across 15 datasets, 9 technologies. |
+| Subcellular platform benchmark, *Nature Communications* 2025 | **Xenium 5K** + CODEX | Used CellCharter for spatial clustering to evaluate cross-platform concordance | Benchmarked Stereo-seq, Visium HD, CosMx 6K, Xenium 5K on cancer tissues. |
 
 **Relevance to our pipeline:** The only niche tool verified on both RNA (CosMx, MERSCOPE) and protein (CODEX, IMC) platforms. This makes it uniquely suited for our Step 4 (RNA vs protein concordance), where we run it independently on each modality of D1 and V1.
 
@@ -96,11 +96,11 @@ CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 
 **Used in published studies:**
 
-| Study | How NicheCompass Was Used | Context |
-|-------|-------------------------|---------|
-| Cardiac-immune microniches, *bioRxiv* 2026 | Segmented zebrafish heart injury area into 7 distinct microniches with distinct cell-cell communication programs | Cardiac regeneration. Identified immune microniches driving macrophage states in the regenerating heart. |
-| Oligodendroglia vulnerability, *Acta Neuropathologica* 2025 | Identified cellular domains by integrating spatial transcriptomics across samples | Parkinson's disease. Characterized oligodendroglia vulnerability in the human dorsal striatum. |
-| Skin fibroblasts atlas, *Nature Immunology* 2025 | Ran NicheCompass with 1,024 spatially variable genes, 8 neighbors per cell | Atopic dermatitis. Revealed shared disease-related fibroblast subtypes across tissues. |
+| Study | Platform | How NicheCompass Was Used | Context |
+|-------|----------|-------------------------|---------|
+| Oligodendroglia vulnerability, *Acta Neuropathologica* 2025 | **Xenium (366 genes)** | Identified cellular domains by integrating spatial transcriptomics across samples | Parkinson's disease. Human dorsal striatum, small panel similar to our ~300-gene Xenium. |
+| Skin fibroblasts atlas, *Nature Immunology* 2025 | **Xenium 5K** + Visium | Ran NicheCompass with 1,024 spatially variable genes, 8 neighbors per cell | Atopic dermatitis. Human skin fibroblast subtypes across tissues. |
+| Cardiac-immune microniches, *bioRxiv* 2026 | Visium + MERFISH | Segmented injury area into 7 distinct microniches with distinct cell-cell communication programs | Cardiac regeneration. Zebrafish heart. |
 
 !!! note "Adoption status"
     NicheCompass was published in March 2025 and adoption is still early. Most spatial CCC studies currently use CellChat (Wang/Liu et al. 2025), stLearn (Prakrithi et al. 2025), or custom L-R analysis (Peng/Kadara et al. 2026) rather than NicheCompass.
@@ -132,7 +132,7 @@ CosMx's ~1,000-gene panel partially alleviates these issues for V1 validation.
 
 | Tool | Task | Works on Xenium? | Works on CosMx? | Works on CODEX? | Small Panel Limitation |
 |------|------|-----------------|----------------|----------------|----------------------|
-| **CellCharter** | Niche ID | Likely (listed, untested) | **Yes** | **Yes** | None — composition-based, not gene-dependent |
+| **CellCharter** | Niche ID | **Yes** (independently validated) | **Yes** | **Yes** | None — composition-based, not gene-dependent |
 | **NicheCompass** | Communication | **Yes** | **Yes** | No | Loses L-R programs on ~300-gene panels |
 | **Niche-DE** | Gene programs | **Yes** | **Yes** | No | Core works; niche-LR extension unavailable on small panels |
 

@@ -2,7 +2,7 @@
 
 **Verdict:** The only niche method that directly incorporates clinical labels into niche discovery — finds niches that matter for patient outcome, not just niches that exist.
 
-**Citation:** Hu Y, et al. "Unsupervised and supervised discovery of tissue cellular neighborhoods from cell phenotypes." *Nature Methods* 21:267-278, 2024. [DOI](https://doi.org/10.1038/s41592-024-02283-w)
+**Citation:** Hu Y, et al. "Unsupervised and supervised discovery of tissue cellular neighborhoods from cell phenotypes." *Nature Methods* 21:267-278, 2024. [DOI](https://doi.org/10.1038/s41592-023-02124-2)
 
 ## Problem Setup
 

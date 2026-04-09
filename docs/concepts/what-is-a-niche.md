@@ -58,7 +58,7 @@ Methods: [NicheCompass](https://github.com/Lotfollahi-lab/nichecompass), [COMMOT
 
 **Niche = joint histological and molecular features.**
 
-Methods: [TESLA](https://github.com/jianhuupenn/TESLA), [METI](https://github.com/jianhuupenn/METI), GigaTIME.
+Methods: [TESLA](https://github.com/jianhuupenn/TESLA), [METI](https://github.com/Flashiness/METI), GigaTIME.
 
 - **Requires:** H&E images + gene expression (or protein markers).
 - **Discovers:** Morphologically defined microenvironments that integrate tissue architecture visible in histology with molecular profiles.

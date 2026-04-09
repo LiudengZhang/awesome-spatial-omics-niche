@@ -58,7 +58,7 @@ Domain methods enforce or strongly favor spatial contiguity. Niche methods group
 ### STACI
 
 - **Paper:** [Bioinformatics, 2023](https://doi.org/10.1093/bioinformatics/btad634)
-- **Code:** [github.com/MaCompBio/STACI](https://github.com/MaCompBio/STACI)
+- **Code:** [github.com/uhlerlab/STACI](https://github.com/uhlerlab/STACI)
 - Statistical approach using spatial autocorrelation for domain identification.
 
 ## When Domain Methods Are Appropriate for Niche Questions

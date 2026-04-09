@@ -2,7 +2,7 @@
 
 **Verdict:** The most complete niche method currently available — integrates cell identity, spatial context, and ligand-receptor signaling into a single framework with cross-sample atlas building.
 
-**Citation:** Lim J, et al. "NicheCompass: a graph neural network approach to niche identification using cell-cell communication." *Nature Genetics* 57:697-708, 2025. [DOI](https://doi.org/10.1038/s41588-025-02067-y)
+**Citation:** Lim J, et al. "NicheCompass: a graph neural network approach to niche identification using cell-cell communication." *Nature Genetics* 57:697-708, 2025. [DOI](https://doi.org/10.1038/s41588-025-02120-6)
 
 ## Problem Setup
 

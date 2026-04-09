@@ -24,7 +24,7 @@ The most direct approach: perturb a component of the niche and measure the spati
 
 ### Niche-DE as a Proxy
 
-[Niche-DE](https://github.com/ccb-hms/NicheDE) tests whether gene expression in a cell depends on its niche context. While still correlative (it measures association, not causation), it is a step toward functional characterization because it identifies genes whose expression is niche-dependent rather than cell-intrinsic.
+[Niche-DE](https://github.com/kaishumason/NicheDE) tests whether gene expression in a cell depends on its niche context. While still correlative (it measures association, not causation), it is a step toward functional characterization because it identifies genes whose expression is niche-dependent rather than cell-intrinsic.
 
 ### Agent-Based Modeling
 

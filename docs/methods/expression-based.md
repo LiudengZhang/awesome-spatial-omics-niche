@@ -28,7 +28,7 @@ These methods answer the question: how does the transcriptomic landscape change 
 ### SpiceMix
 
 - **Paper:** [Nature Genetics, 2023](https://doi.org/10.1038/s41588-022-01256-z)
-- **Code:** [github.com/kharchenkolab/SpiceMix](https://github.com/kharchenkolab/SpiceMix)
+- **Code:** [github.com/ma-compbio/SpiceMix](https://github.com/ma-compbio/SpiceMix)
 - **Niche definition:** Non-negative matrix factorization with spatial priors decomposes expression into metagenes with spatially varying loadings.
 - **Key innovation:** Handles subcellular-resolution data (seqFISH, MERFISH) and produces interpretable metagene programs.
 - **Strengths:** Interpretable decomposition, spatial priors without enforcing contiguity, handles multiple spatial scales.
@@ -46,7 +46,7 @@ These methods answer the question: how does the transcriptomic landscape change 
 ### NichePCA
 
 - **Paper:** [Bioinformatics, 2025](https://doi.org/10.1093/bioinformatics/btae708)
-- **Code:** [github.com/niche-pca/NichePCA](https://github.com/niche-pca/NichePCA)
+- **Code:** [github.com/imsb-uke/nichepca](https://github.com/imsb-uke/nichepca)
 - **Niche definition:** PCA applied to spatial neighborhood expression profiles, producing interpretable niche axes.
 - **Key innovation:** Explicitly designed for niche analysis rather than adapted from domain detection; niche axes correspond to biological gradients.
 - **Strengths:** Simple, fast, interpretable axes. Newest method in this category.

@@ -2,7 +2,7 @@
 
 **Verdict:** The most complete composition-based niche method; multi-resolution, cross-platform, and principled clustering, though bounded by the quality of input cell-type annotations.
 
-**Citation:** Varrone M, et al. "CellCharter reveals spatial cell niches associated with tissue remodeling and cell plasticity." *Nature Genetics* 56:1718-1727, 2024. [DOI](https://doi.org/10.1038/s41588-024-01835-0)
+**Citation:** Varrone M, et al. "CellCharter reveals spatial cell niches associated with tissue remodeling and cell plasticity." *Nature Genetics* 56:1718-1727, 2024. [DOI](https://doi.org/10.1038/s41588-023-01588-4)
 
 ## Problem Setup
 

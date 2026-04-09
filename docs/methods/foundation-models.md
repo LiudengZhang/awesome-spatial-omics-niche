@@ -8,7 +8,7 @@ Foundation models learn what a niche is from data rather than imposing a definit
 
 ### Nicheformer
 
-- **Paper:** [Nature Methods, 2025](https://doi.org/10.1038/s41592-025-02610-7)
+- **Paper:** [Nature Methods, 2025](https://doi.org/10.1038/s41592-025-02814-z)
 - **Code:** [github.com/theislab/nicheformer](https://github.com/theislab/nicheformer)
 - **Niche definition:** Transformer-based model trained on both dissociated and spatial single-cell data; learns niche-aware cell embeddings by incorporating spatial neighborhood context during pre-training.
 - **Key innovation:** A 49M-parameter model that beats the 444M TranscriptFormer on spatial tasks, demonstrating that incorporating spatial context during training matters more than parameter count.
@@ -19,7 +19,7 @@ Foundation models learn what a niche is from data rather than imposing a definit
 ### scNiche
 
 - **Paper:** [Nature Communications, 2025](https://doi.org/10.1038/s41467-025-56090-0)
-- **Code:** [github.com/wanglabtongji/scNiche](https://github.com/wanglabtongji/scNiche)
+- **Code:** [github.com/ZJUFanLab/scNiche](https://github.com/ZJUFanLab/scNiche)
 - **Niche definition:** Graph attention network that produces niche-aware cell embeddings by attending to spatial neighbors with learned importance weights.
 - **Key innovation:** Combines graph attention (which cells to attend to) with expression modeling for integrated niche representation.
 - **Strengths:** Attention weights provide some interpretability — you can see which neighbors the model considers important for each cell.

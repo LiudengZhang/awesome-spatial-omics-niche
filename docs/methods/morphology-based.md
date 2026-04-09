@@ -8,7 +8,7 @@ These methods integrate H&E staining images with molecular data (transcriptomics
 
 ### TESLA
 
-- **Paper:** [Cell Systems, 2023](https://doi.org/10.1016/j.cels.2022.12.006)
+- **Paper:** [Cell Systems, 2023](https://doi.org/10.1016/j.cels.2023.03.008)
 - **Code:** [github.com/jianhuupenn/TESLA](https://github.com/jianhuupenn/TESLA)
 - **Niche definition:** Combines H&E image features with spatial gene expression to annotate tissue at finer resolution than the original spatial transcriptomics spots.
 - **Key innovation:** Super-resolution annotation — uses histology to subdivide spatial transcriptomics spots, enabling finer-grained niche characterization. Developed by Linghua Wang's group at MD Anderson.
@@ -18,7 +18,7 @@ These methods integrate H&E staining images with molecular data (transcriptomics
 ### METI
 
 - **Paper:** [Nature Communications, 2024](https://doi.org/10.1038/s41467-024-44835-y)
-- **Code:** [github.com/jianhuupenn/METI](https://github.com/jianhuupenn/METI)
+- **Code:** [github.com/Flashiness/METI](https://github.com/Flashiness/METI)
 - **Niche definition:** Maps tumor microenvironment interactions by combining morphological features from H&E with spatial gene expression to characterize cell-cell interactions at the tissue level.
 - **Key innovation:** Explicitly targets TME characterization by integrating morphological phenotyping with molecular spatial data. Also from Linghua Wang's group.
 - **Strengths:** Directly addresses tumor niche characterization, clinically actionable output, builds on TESLA's framework.

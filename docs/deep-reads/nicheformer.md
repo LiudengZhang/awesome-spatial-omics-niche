@@ -2,7 +2,7 @@
 
 **Verdict:** The first foundation model designed specifically for spatial single-cell data. Proves that architecture (incorporating spatial context) matters more than scale (parameter count).
 
-**Citation:** Schaar AC, et al. "Nicheformer: a foundation model for single-cell and spatial omics." *Nature Methods* 22:688-697, 2025. [DOI](https://doi.org/10.1038/s41592-025-02610-7)
+**Citation:** Schaar AC, et al. "Nicheformer: a foundation model for single-cell and spatial omics." *Nature Methods* 22:688-697, 2025. [DOI](https://doi.org/10.1038/s41592-025-02814-z)
 
 ## Problem Setup
 

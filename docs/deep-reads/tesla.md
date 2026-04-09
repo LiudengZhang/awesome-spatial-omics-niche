@@ -2,7 +2,7 @@
 
 **Verdict:** Practical and impactful — H&E-guided super-resolution for spatial transcriptomics addresses a real limitation of spot-level technologies. From Linghua Wang's group, directly relevant to the morphology-niche connection.
 
-**Citation:** Hu J, et al. "TESLA uncovers spatial gene expression patterns at super-resolution in tissue by integrating histological images." *Cell Systems* 14(1):20-32.e6, 2023. [DOI](https://doi.org/10.1016/j.cels.2022.12.006)
+**Citation:** Hu J, et al. "TESLA uncovers spatial gene expression patterns at super-resolution in tissue by integrating histological images." *Cell Systems* 14(1):20-32.e6, 2023. [DOI](https://doi.org/10.1016/j.cels.2023.03.008)
 
 ## Problem Setup
 

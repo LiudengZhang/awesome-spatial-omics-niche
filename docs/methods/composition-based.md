@@ -8,7 +8,7 @@ These methods answer the question: what cell types co-localize in this tissue? T
 
 ### CellCharter
 
-- **Paper:** [Nature Genetics, 2024](https://doi.org/10.1038/s41588-024-01835-0)
+- **Paper:** [Nature Genetics, 2024](https://doi.org/10.1038/s41588-023-01588-4)
 - **Code:** [github.com/CSOgroup/cellcharter](https://github.com/CSOgroup/cellcharter)
 - **Niche definition:** GNN-learned embedding of cell-type composition at multiple spatial resolutions.
 - **Key innovation:** Handles multiple spatial scales simultaneously and works across both imaging-based and sequencing-based spatial platforms.
@@ -25,7 +25,7 @@ These methods answer the question: what cell types co-localize in this tissue? T
 
 ### CytoCommunity
 
-- **Paper:** [Nature Methods, 2024](https://doi.org/10.1038/s41592-024-02283-w)
+- **Paper:** [Nature Methods, 2024](https://doi.org/10.1038/s41592-023-02124-2)
 - **Code:** [github.com/huBioinfo/CytoCommunity](https://github.com/huBioinfo/CytoCommunity)
 - **Niche definition:** Supervised graph partitioning that uses condition labels (e.g., responder vs non-responder) to find disease-relevant cellular neighborhoods.
 - **Key innovation:** The only niche method that directly incorporates clinical outcome labels into niche discovery.
@@ -35,7 +35,7 @@ These methods answer the question: what cell types co-localize in this tissue? T
 ### SpatialLDA
 
 - **Paper:** [Genome Biology, 2022](https://doi.org/10.1186/s13059-022-02721-y)
-- **Code:** [github.com/KChen-lab/SpatialLDA](https://github.com/KChen-lab/SpatialLDA)
+- **Code:** [github.com/calico/spatial_lda](https://github.com/calico/spatial_lda)
 - **Niche definition:** Topic modeling treats spatial regions as documents and cell types as words; niches are latent topics.
 - **Key innovation:** Probabilistic framework that allows cells to belong to multiple niche topics with different weights.
 - **Strengths:** Interpretable topic structure, handles mixed niches naturally.
@@ -44,7 +44,7 @@ These methods answer the question: what cell types co-localize in this tissue? T
 ### SOTIP
 
 - **Paper:** [Nature Communications, 2023](https://doi.org/10.1038/s41467-023-39608-w)
-- **Code:** [github.com/bm2-lab/SOTIP](https://github.com/bm2-lab/SOTIP)
+- **Code:** [github.com/TencentAILabHealthcare/SOTIP](https://github.com/TencentAILabHealthcare/SOTIP)
 - **Niche definition:** Optimal transport distances between spatial neighborhoods enable cross-sample niche comparison.
 - **Key innovation:** Designed for multi-sample, multi-condition analysis — compares niches across patients.
 - **Strengths:** Principled statistical framework for inter-sample niche comparison.
@@ -52,7 +52,7 @@ These methods answer the question: what cell types co-localize in this tissue? T
 ### CNTools
 
 - **Paper:** [Bioinformatics, 2024](https://doi.org/10.1093/bioinformatics/btae095)
-- **Code:** [github.com/schwartzlab-methods/CNTools](https://github.com/schwartzlab-methods/CNTools)
+- **Code:** [github.com/liu-bioinfo-lab/CNTools](https://github.com/liu-bioinfo-lab/CNTools)
 - **Niche definition:** Kernel density estimation of cell-type distributions in spatial neighborhoods.
 - **Strengths:** Lightweight, interpretable, does not require graph construction.
 

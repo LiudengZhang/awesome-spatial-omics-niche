@@ -8,7 +8,7 @@ These methods answer the question: what are cells saying to each other? They def
 
 ### NicheCompass
 
-- **Paper:** [Nature Genetics, 2025](https://doi.org/10.1038/s41588-025-02067-y)
+- **Paper:** [Nature Genetics, 2025](https://doi.org/10.1038/s41588-025-02120-6)
 - **Code:** [github.com/Lotfollahi-lab/nichecompass](https://github.com/Lotfollahi-lab/nichecompass)
 - **Niche definition:** Graph neural network that explicitly encodes ligand-receptor interactions as features of the spatial graph, learning niche embeddings that reflect both cell identity and intercellular signaling.
 - **Key innovation:** Builds a unified niche atlas across samples and conditions, enabling cross-sample niche comparison with communication-aware embeddings.

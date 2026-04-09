@@ -2,7 +2,7 @@
 
 **Verdict:** Answers a question most niche methods ignore: once you define a niche, which genes are actually affected by it? Separates niche-dependent from cell-intrinsic expression.
 
-**Citation:** Jiang R, et al. "Niche-DE: niche-differential gene expression analysis in spatial transcriptomics data identifies context-dependent cell-cell interactions." *Genome Biology* 25:14, 2024. [DOI](https://doi.org/10.1186/s13059-023-03154-x)
+**Citation:** Jiang R, et al. "Niche-DE: niche-differential gene expression analysis in spatial transcriptomics data identifies context-dependent cell-cell interactions." *Genome Biology* 25:14, 2024. [DOI](https://doi.org/10.1186/s13059-023-03159-6)
 
 ## Problem Setup
 

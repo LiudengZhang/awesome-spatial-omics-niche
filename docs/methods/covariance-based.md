@@ -28,7 +28,7 @@ These methods go beyond averaging neighbor expression to capture how gene co-exp
 ### SPACE
 
 - **Paper:** [Cell Systems, 2023](https://doi.org/10.1016/j.cels.2023.04.006)
-- **Code:** [github.com/dpeerlab/SPACE](https://github.com/dpeerlab/SPACE)
+- **Code:** [github.com/zhangqf-lab/SPACE](https://github.com/zhangqf-lab/SPACE)
 - **Niche definition:** Identifies spatial gene expression patterns through spatially-aware clustering of local covariance.
 - **Key innovation:** From the same lab as ENVI/COVET; focuses on discovering coherent spatial expression programs.
 - **Strengths:** Reveals spatially structured gene programs that may correspond to niche-specific regulatory states.

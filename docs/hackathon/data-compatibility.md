@@ -1,24 +1,6 @@
 # Data Compatibility
 
-This page maps our hackathon datasets against the tools in our pipeline, documents platform constraints, and provides a focused overview of our three selected tools — including how they have been used in published studies.
-
----
-
-## Our Datasets
-
-| Dataset | Platform | Modality | Resolution | Approx. Genes/Markers | Notes |
-|---------|----------|----------|-----------|----------------------|-------|
-| **D1** | 10x Xenium | RNA | Single-cell | ~300 genes | Targeted panel |
-| **D1** | Protein panel | Protein | Single-cell | TBD | Same tissue as Xenium |
-| **D1** | H&E | Morphology | Pixel-level | — | Paired with spatial data |
-| **D4** | 10x Xenium | RNA | Single-cell | ~300 genes | Targeted panel |
-| **D4** | Visium HD | RNA | Sub-spot | Whole transcriptome | High-resolution spots |
-| **D4** | Visium v2 | RNA | Spot-level (55 um) | Whole transcriptome | Standard resolution |
-| **D4** | scRNA-seq | RNA | Dissociated | Whole transcriptome | No spatial information |
-| **D4** | 5'GEX + TCR VDJ | RNA + TCR | Dissociated | Whole transcriptome + TCR | Immune repertoire |
-| **D4** | H&E | Morphology | Pixel-level | — | Paired with spatial data |
-| **V1** | NanoString CosMx | RNA | Single-cell | ~1,000 genes | Larger panel than Xenium |
-| **V1** | CODEX | Protein | Single-cell | ~50 markers | Protein-only |
+This page maps our hackathon tools against our specific platforms, documents panel-size constraints, and provides a focused overview of our three selected tools — including how they have been used in published studies.
 
 ---
 
@@ -26,36 +8,36 @@ This page maps our hackathon datasets against the tools in our pipeline, documen
 
 How each tool performs on our specific platforms. Verified against source papers and codebases.
 
-:white_check_mark: = paper-tested | :warning: = listed/likely but untested | :x: = incompatible
+Legend: **Yes** = paper-tested | **Likely** = listed/likely but untested | **No** = incompatible or untested
 
 ### Niche Recognition Tools
 
-| Tool | Xenium (D1, D4) | Protein (D1) | CosMx (V1) | CODEX (V1) | Visium (D4) |
-|------|:---:|:---:|:---:|:---:|:---:|
-| **CellCharter** | :warning: | :warning: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| **BANKSY** | :x: | :x: | :white_check_mark: | :x: | :white_check_mark: |
-| **NicheCompass** | :white_check_mark: | :x: | :white_check_mark: | :x: | :x: |
-| **Nicheformer** | :x: | :x: | :x: | :x: | :white_check_mark: |
-| **ENVI/COVET** | :x: | :x: | :x: | :x: | :x: |
-| **SpiceMix** | :x: | :x: | :x: | :x: | :x: |
-| **CytoCommunity** | :x: | :x: | :x: | :white_check_mark: | :x: |
-| **SpatialLDA** | :x: | :x: | :x: | :white_check_mark: | :x: |
-| **Novae** | :warning: | :x: | :x: | :x: | :white_check_mark: |
+| Tool | Xenium | Protein | CosMx | CODEX | Visium |
+|------|--------|---------|-------|-------|--------|
+| **CellCharter** | Likely | Likely | **Yes** | **Yes** | **Yes** |
+| **BANKSY** | No | No | **Yes** | No | **Yes** |
+| **NicheCompass** | **Yes** | No | **Yes** | No | No |
+| **Nicheformer** | No | No | No | No | **Yes** |
+| **ENVI/COVET** | No | No | No | No | No |
+| **SpiceMix** | No | No | No | No | No |
+| **CytoCommunity** | No | No | No | **Yes** | No |
+| **SpatialLDA** | No | No | No | **Yes** | No |
+| **Novae** | Likely | No | No | No | **Yes** |
 
 ### Functional Characterization Tools
 
-| Tool | Xenium (D1, D4) | Protein (D1) | CosMx (V1) | CODEX (V1) | Visium (D4) |
-|------|:---:|:---:|:---:|:---:|:---:|
-| **NicheCompass** | :white_check_mark: | :x: | :white_check_mark: | :x: | :x: |
-| **COMMOT** | :x: | :x: | :x: | :x: | :white_check_mark: |
-| **CellChat v2** | :x: | :x: | :x: | :x: | :white_check_mark: |
-| **SpaTalk** | :x: | :x: | :x: | :x: | :x: |
-| **SpatialDM** | :x: | :x: | :x: | :x: | :white_check_mark: |
-| **Niche-DE** | :white_check_mark: | :x: | :white_check_mark: | :x: | :white_check_mark: |
-| **NCEM** | :x: | :x: | :x: | :x: | :white_check_mark: |
-| **MISTy** | :x: | :x: | :x: | :x: | :white_check_mark: |
-| **TESLA** | :x: | :x: | :x: | :x: | :white_check_mark: |
-| **METI** | :x: | :x: | :x: | :x: | :white_check_mark: |
+| Tool | Xenium | Protein | CosMx | CODEX | Visium |
+|------|--------|---------|-------|-------|--------|
+| **NicheCompass** | **Yes** | No | **Yes** | No | No |
+| **COMMOT** | No | No | No | No | **Yes** |
+| **CellChat v2** | No | No | No | No | **Yes** |
+| **SpaTalk** | No | No | No | No | No |
+| **SpatialDM** | No | No | No | No | **Yes** |
+| **Niche-DE** | **Yes** | No | **Yes** | No | **Yes** |
+| **NCEM** | No | No | No | No | **Yes** |
+| **MISTy** | No | No | No | No | **Yes** |
+| **TESLA** | No | No | No | No | **Yes** |
+| **METI** | No | No | No | No | **Yes** |
 
 !!! warning "Takeaway"
     Most tools were developed and tested on Visium or MERFISH. For our Xenium + CosMx data, only **CellCharter**, **NicheCompass**, and **Niche-DE** have verified compatibility. This is the primary reason they were selected.
